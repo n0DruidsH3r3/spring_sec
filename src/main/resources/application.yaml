@@ -1,0 +1,11 @@
+app:
+  users:
+    - username: "user"
+      password: "{bcrypt}$2a$10$F5hw8jcGe89WsRHcO2MGx.kYFQM1gdvWWhozi5UD/ozOJY3GCOtZ6"
+      role: "USER"
+    - username: "admin"
+      password: "{bcrypt}$2a$10$F5hw8jcGe89WsRHcO2MGx.kYFQM1gdvWWhozi5UD/ozOJY3GCOtZ6"
+      role: "ADMIN"
+logging:
+  level:
+    org.springframework.security: debug
