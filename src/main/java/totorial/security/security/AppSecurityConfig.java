@@ -16,7 +16,7 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private AppSecurityConfigProperties conf;
 
-    public UserDetailsService myUserDetailsService() {
+    private UserDetailsService myUserDetailsService() {
         InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
         for (var user : conf.getUsers()) {
             userDetailsManager.createUser(User.withUsername(user.getUsername())
